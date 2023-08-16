@@ -1,0 +1,7 @@
+# ninja log v5
+4	642	7139014573552212	CMakeFiles/SimpleJsonParser.dir/main.cpp.obj	aaf646008408ceb8
+3	594	7139015907351729	CMakeFiles/SimpleJsonParser.dir/json/json.cpp.obj	b2b3a7ece466086f
+594	769	7139015909077778	SimpleJsonParser.exe	39a4d373db469169
+3	646	7139017544242316	CMakeFiles/SimpleJsonParser.dir/json/json.cpp.obj	b2b3a7ece466086f
+6	673	7139017544520682	CMakeFiles/SimpleJsonParser.dir/main.cpp.obj	aaf646008408ceb8
+673	832	7139017546087998	SimpleJsonParser.exe	39a4d373db469169
