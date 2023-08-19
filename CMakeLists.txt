@@ -3,9 +3,11 @@ project(SimpleJsonParser)
 
 set(CMAKE_CXX_STANDARD 17)
 
-include_directories(json)
+include_directories(json parser)
 
 add_executable(SimpleJsonParser
         json/json.cpp
         json/json.h
-        main.cpp)
+        main.cpp
+        parser/parser.h
+        parser/parser.cpp)

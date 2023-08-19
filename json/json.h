@@ -156,6 +156,34 @@ namespace json {
 
         std::string to_string();
 
+        void push_back(JObject item)
+        {
+            if (m_type == JSON_LIST) {
+                auto& list = Value<std::vector<JObject>>();
+                list.push_back(std::move(item));
+                return;
+            }
+            throw std::logic_error("[JObject::push_back]Not a list type!");
+        }
+
+        void pop_back()
+        {
+            if (m_type == JSON_LIST) {
+                auto& list = Value<std::vector<JObject>>();
+                list.pop_back();
+                return;
+            }
+            throw std::logic_error("[JObject::pop_back]Not a list type!");
+        }
+
+        JObject& operator[](std::string const& key)
+        {
+            if (m_type == JSON_DICT) {
+                auto& dict = Value<std::map<std::string, JObject>>();
+                return dict[key];
+            }
+            throw std::logic_error("[JObject::operator[]]Not a dict type!");
+        }
 
     private:
         void *value();

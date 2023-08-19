@@ -52,16 +52,23 @@ build cmake_object_order_depends_target_SimpleJsonParser: phony || CMakeFiles/Si
 build CMakeFiles/SimpleJsonParser.dir/json/json.cpp.obj: CXX_COMPILER__SimpleJsonParser_Debug D$:/CPP/SimpleJSONParser/SimpleJsonParser/json/json.cpp || cmake_object_order_depends_target_SimpleJsonParser
   DEP_FILE = CMakeFiles\SimpleJsonParser.dir\json\json.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/CPP/SimpleJSONParser/SimpleJsonParser/json
+  INCLUDES = -ID:/CPP/SimpleJSONParser/SimpleJsonParser/json -ID:/CPP/SimpleJSONParser/SimpleJsonParser/parser
   OBJECT_DIR = CMakeFiles\SimpleJsonParser.dir
   OBJECT_FILE_DIR = CMakeFiles\SimpleJsonParser.dir\json
 
 build CMakeFiles/SimpleJsonParser.dir/main.cpp.obj: CXX_COMPILER__SimpleJsonParser_Debug D$:/CPP/SimpleJSONParser/SimpleJsonParser/main.cpp || cmake_object_order_depends_target_SimpleJsonParser
   DEP_FILE = CMakeFiles\SimpleJsonParser.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/CPP/SimpleJSONParser/SimpleJsonParser/json
+  INCLUDES = -ID:/CPP/SimpleJSONParser/SimpleJsonParser/json -ID:/CPP/SimpleJSONParser/SimpleJsonParser/parser
   OBJECT_DIR = CMakeFiles\SimpleJsonParser.dir
   OBJECT_FILE_DIR = CMakeFiles\SimpleJsonParser.dir
+
+build CMakeFiles/SimpleJsonParser.dir/parser/parser.cpp.obj: CXX_COMPILER__SimpleJsonParser_Debug D$:/CPP/SimpleJSONParser/SimpleJsonParser/parser/parser.cpp || cmake_object_order_depends_target_SimpleJsonParser
+  DEP_FILE = CMakeFiles\SimpleJsonParser.dir\parser\parser.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/CPP/SimpleJSONParser/SimpleJsonParser/json -ID:/CPP/SimpleJSONParser/SimpleJsonParser/parser
+  OBJECT_DIR = CMakeFiles\SimpleJsonParser.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleJsonParser.dir\parser
 
 
 # =============================================================================
@@ -71,7 +78,7 @@ build CMakeFiles/SimpleJsonParser.dir/main.cpp.obj: CXX_COMPILER__SimpleJsonPars
 #############################################
 # Link the executable SimpleJsonParser.exe
 
-build SimpleJsonParser.exe: CXX_EXECUTABLE_LINKER__SimpleJsonParser_Debug CMakeFiles/SimpleJsonParser.dir/json/json.cpp.obj CMakeFiles/SimpleJsonParser.dir/main.cpp.obj
+build SimpleJsonParser.exe: CXX_EXECUTABLE_LINKER__SimpleJsonParser_Debug CMakeFiles/SimpleJsonParser.dir/json/json.cpp.obj CMakeFiles/SimpleJsonParser.dir/main.cpp.obj CMakeFiles/SimpleJsonParser.dir/parser/parser.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SimpleJsonParser.dir
